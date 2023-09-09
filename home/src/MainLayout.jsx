@@ -17,9 +17,9 @@ export default function MainLayout() {
         <Header />
         <div className="my-10">
           <Routes>
-            <Route path="/" component={<HomeContent />} />
-            <Route path="/product/:id" component={<PDPContent />} />
-            <Route path="/cart" component={<CartContent />} />
+            <Route path="/" element={<HomeContent/>} />
+            <Route path="/product/:id" element={<PDPContent />} />
+            <Route path="/cart" element={<CartContent />} />
           </Routes>
         </div>
         <Footer />

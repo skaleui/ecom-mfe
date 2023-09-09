@@ -9,6 +9,10 @@ export default function HomeContent() {
   const loggedIn = useLoggedIn();
 
   useEffect(()=> {
+
+    let uu = getProducts();
+    console.log(uu);
+
     getProducts().then(setProducts);
   }, []);
 

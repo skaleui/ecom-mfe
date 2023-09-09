@@ -11,7 +11,6 @@ export default function MiniCart() {
     console.log("Mini setitems 1", cart);
     setItems(cart.value?.cartItems);
      cart.subscribe((c) => {
-      console.log("Mini setitems 2", c);
       setItems(c?.cartItems);
     });
   }, []);
